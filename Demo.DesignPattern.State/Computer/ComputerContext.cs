@@ -1,6 +1,7 @@
-﻿using Humanizer;
+﻿using Demo.DesignPattern.State.Computer.Computer;
+using Humanizer;
 
-namespace Demo.DesignPattern.State
+namespace Demo.DesignPattern.State.Computer
 {
     /// <summary>
     /// This Computer class is the 'Context' that stores a reference to one of the concrete 
@@ -8,12 +9,12 @@ namespace Demo.DesignPattern.State
     /// with the state object via the state interface. The context exposes a setter for 
     /// passing it a new state object.
     /// </summary>
-    public class Computer
+    public class ComputerContext
     {
         private IState state;
 
         // Instantiate the context with initial state
-        public Computer(IState state)
+        public ComputerContext(IState state)
         {
             this.state = state;
         }

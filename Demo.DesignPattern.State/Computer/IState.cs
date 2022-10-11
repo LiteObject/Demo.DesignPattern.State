@@ -1,4 +1,4 @@
-﻿namespace Demo.DesignPattern.State
+﻿namespace Demo.DesignPattern.State.Computer.Computer
 {
     /// <summary>
     /// The State interface declares the state-specific methods. 
@@ -8,6 +8,6 @@
     /// </summary>
     public interface IState
     {
-        public void Handle(Computer context);
+        public void Handle(ComputerContext context);
     }
 }
